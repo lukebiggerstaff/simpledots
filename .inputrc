@@ -1,0 +1,13 @@
+# enable vim keybindings everywhere
+set editing-mode vi
+set keymap vi
+
+# enable colored tab completion
+set colored-stats
+
+# enable case-insensitive completion
+set completion-ignore-case
+set completion-map-case
+
+# display visible-stats
+set visible-stats

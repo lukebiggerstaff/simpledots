@@ -15,7 +15,7 @@ if [ -f `which powerline-daemon` ]; then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
-    . /usr/share/powerline/bash/powerline.sh
+    . /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
 #LinuxAcademy
@@ -42,3 +42,8 @@ alias AWS='ssh -i "~/.ssh/AWSInstance.pem" ec2-user@ec2-54-202-99-194.us-west-2.
 
 #DO Droplet
 alias DO='ssh luke@162.243.205.196'
+
+#set up virtualenvwrapper for python
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+

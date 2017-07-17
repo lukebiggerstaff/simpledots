@@ -16,6 +16,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
+"Plugin 'vim-syntastic/syntastic' " get this set up later, needs configuration
 Plugin 'tpope/vim-surround'
 
 " Snippets are separated from the engine. Add this if you want them:
@@ -26,7 +27,7 @@ call vundle#end()            " required
 filetype indent plugin on               "enable filetype indenting, plugins
 
 syntax on                               "enable syntax highlighting
-color elflord                           "set colorscheme to :elflord:
+color ron                           "set colorscheme to :elflord:
 set wildmenu                            "set command line completion
 set wildmode=longest:full
 set magic                               "set regex to grep mode

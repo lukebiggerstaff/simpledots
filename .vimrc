@@ -16,6 +16,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
+Plugin 'suan/vim-instant-markdown'
 "Plugin 'vim-syntastic/syntastic' " get this set up later, needs configuration
 Plugin 'tpope/vim-surround'
 

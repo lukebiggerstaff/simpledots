@@ -70,10 +70,12 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix |
 
 
-au BufNewFile,BufRead *.js,*.html,*.css,*.scss
+au BufNewFile,BufRead *.js,*.html,*.css,*.scss,*.yml
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
+    \ set autoindent | 
+    \ set expandtab |
 
 " begin UltiSnips workaround
 function! g:UltiSnips_Complete()
@@ -127,3 +129,6 @@ let b:surround_{char2nr("i")} = "{% if \1condition: \1 %}\r{% endif %}"
 let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
 let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
 let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
+
+" set C/C++ compilation flags for ycm
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'

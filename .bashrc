@@ -25,17 +25,24 @@ export PATH="/home/robot/anaconda3/bin:$PATH"
 # aws command line completion
 complete -c "/home/robot/.local/bin/aws_completer" aws
 
+# kubectl command line completion
+source <(kubectl completion bash)
+
 # make py env function
 function mkpyenv()
 {
     mkdir pyenv &&
     python3.5 -m venv ./pyenv &&
     source pyenv/bin/activate &&
-    python -m pip install ansible-container[docker] django;
+    python -m pip install -U docker-compose django awsebcli;
 }
 
 # exec docker command on alpine linux container
 dexec ()
 {
     docker exec -it "$1" sh -c "$2";
+}
+dshell ()
+{
+    docker exec -it "$1" /bin/sh;
 }

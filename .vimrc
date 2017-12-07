@@ -70,7 +70,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix |
 
 
-au BufNewFile,BufRead *.js,*.html,*.css,*.scss,*.yml
+au BufNewFile,BufRead *.js,*.html,*.css,*.scss,*.yml,*.yaml
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |

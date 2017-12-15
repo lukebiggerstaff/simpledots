@@ -28,14 +28,23 @@ complete -c "/home/robot/.local/bin/aws_completer" aws
 # kubectl command line completion
 source <(kubectl completion bash)
 
-# make py env function
+# python built in venv wrappers
+# make py env directory and install some packages
 function mkpyenv()
 {
-    mkdir pyenv &&
-    python3.5 -m venv ./pyenv &&
-    source pyenv/bin/activate &&
-    python -m pip install -U docker-compose django awsebcli;
+    env="$(basename $PWD)-env"
+    mkdir $env &&
+    python3.5 -m venv ./$env &&
+    source $env/bin/activate &&
+    python -m pip install -U docker-compose django djangorestframework awsebcli;
 }
+# activate virtual env in current directory
+function act()
+{
+    source $(basename $PWD)-env/bin/activate
+}
+# deactivate virtual env
+alias dact=deactivate
 
 # exec docker command on alpine linux container
 dexec ()

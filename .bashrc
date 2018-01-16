@@ -10,6 +10,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias l='ls -alh'
 alias gdb='gdb -q'
+alias g='git status'
 
 #Powerline
 if [ -f `which powerline-daemon` ]; then
@@ -36,7 +37,7 @@ function mkpyenv()
     mkdir $env &&
     python3.5 -m venv ./$env &&
     source $env/bin/activate &&
-    python -m pip install -U docker-compose django djangorestframework awsebcli;
+    python -m pip install -U django;
 }
 # activate virtual env in current directory
 function act()

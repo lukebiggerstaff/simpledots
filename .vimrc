@@ -16,8 +16,9 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
+Plugin 'Raimondi/delimitMate'
+Plugin 'git@github.com:mattn/emmet-vim.git' 
 Plugin 'suan/vim-instant-markdown'
-"Plugin 'vim-syntastic/syntastic' " get this set up later, needs configuration
 Plugin 'tpope/vim-surround'
 
 " Snippets are separated from the engine. Add this if you want them:

@@ -29,7 +29,7 @@ call vundle#end()            " required
 filetype indent plugin on               "enable filetype indenting, plugins
 
 syntax on                               "enable syntax highlighting
-color ron                           "set colorscheme to :elflord:
+color pablo                             "set colorscheme
 set wildmenu                            "set command line completion
 set wildmode=longest:full
 set magic                               "set regex to grep mode
@@ -121,7 +121,7 @@ let g:netrw_browse_split = 3 "open files from netrw in a new tab
 let g:netrw_winsize = 25 "set default size to 25% of the screen
 let g:netrw_liststyle = 3 "customize the default view of files
 
-" customize surround plugin
+" customize surround plugin for use with django
 let b:surround_{char2nr("v")} = "{{ \r }}"
 let b:surround_{char2nr("{")} = "{{ \r }}"
 let b:surround_{char2nr("%")} = "{% \r %}"

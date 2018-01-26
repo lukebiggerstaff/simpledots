@@ -37,7 +37,7 @@ function mkpyenv()
     mkdir $env &&
     python3.5 -m venv ./$env &&
     source $env/bin/activate &&
-    python -m pip install -U django;
+    python -m pip install -U $1 $2 $3;
 }
 # activate virtual env in current directory
 function act()
